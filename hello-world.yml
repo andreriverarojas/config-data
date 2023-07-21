@@ -8,7 +8,7 @@ server:
   port: 8011
 eureka:
   instance:
-    hostname: eureka7001.com
+    hostname: localhost
   client:
     fetch-registry: false
     register-with-eureka: false
