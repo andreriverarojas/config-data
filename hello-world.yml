@@ -7,6 +7,8 @@ spring:
 server:
   port: 8011
 eureka:
+  instance:
+    hostname: eureka7001.com
   client:
     fetch-registry: false
     register-with-eureka: true
