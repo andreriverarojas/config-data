@@ -11,9 +11,9 @@ eureka:
     hostname: eureka7001.com
   client:
     fetch-registry: false
-    register-with-eureka: true
+    register-with-eureka: false
     service-url:
-      default-zone: http://otracosa:8761/eureka
+      defaultZone: http://otracosa:8761/eureka
     instance:
       instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-same-zone-eureka: false
