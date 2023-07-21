@@ -9,9 +9,9 @@ spring:
     
 eureka:
   instance:
-    hostname: localhost
+    hostname: otracosa
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:${server.port}/eureka/
+      defaultZone: http://otracosa:${server.port}/eureka/
