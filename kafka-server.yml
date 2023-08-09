@@ -14,7 +14,7 @@ spring:
     topic: user-details-topic
     topic.group.id: user-details
     consumer:
-      bootstrap-servers: https://recro.serveo.net
+      bootstrap-servers: recro.serveo.net
       group-id: ${spring.kafka.topic.group.id}
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
@@ -28,7 +28,7 @@ spring:
 
 
     producer:
-      bootstrap-servers: https://recro.serveo.net
+      bootstrap-servers: recro.serveo.net
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       client-id: producer-${random.uuid}
